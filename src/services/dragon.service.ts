@@ -1,6 +1,6 @@
 import { AxiosError, AxiosResponse } from 'axios';
-import { Dragon } from '../models/dragon';
-import { API_CLIENT } from '../utils';
+import { Dragon } from '@models/dragon';
+import { API_CLIENT } from '@utils/api';
 
 export const getAllDragons = async (): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {

@@ -48,6 +48,12 @@
         "bundledDependencies": true
       }
     ],
+    "import/no-named-as-default-member": "off",
     "react/jsx-filename-extension": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
