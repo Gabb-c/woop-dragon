@@ -1,0 +1,7 @@
+node_modules
+lib
+.husky
+.vscode
+.github
+/*.js
+vite.config.ts
