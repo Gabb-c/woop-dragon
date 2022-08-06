@@ -1,4 +1,5 @@
 {
+  "references": [{ "path": "./tsconfig.node.json" }],
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -19,5 +20,14 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/__tests__/**/*",
+    "src/stories/**/*",
+    "**/*.spec.tsx",
+    "**/*.test.tsx",
+    "**/*.stories.tsx",
+    "**/*.story.tsx"
+  ]
 }
