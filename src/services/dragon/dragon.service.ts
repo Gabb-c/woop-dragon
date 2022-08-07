@@ -2,6 +2,10 @@ import { AxiosError, AxiosResponse } from 'axios';
 import { Dragon } from '@models/dragon';
 import { API_CLIENT } from '@utils/api';
 
+/**
+ *
+ * @returns
+ */
 export const getAllDragons = async (): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
     API_CLIENT.get<Dragon>('')
@@ -10,6 +14,11 @@ export const getAllDragons = async (): Promise<Dragon> => {
   });
 };
 
+/**
+ *
+ * @param id
+ * @returns
+ */
 export const getDragonById = async (id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
     API_CLIENT.get<Dragon>(`/${id}`)
@@ -18,6 +27,11 @@ export const getDragonById = async (id: string): Promise<Dragon> => {
   });
 };
 
+/**
+ *
+ * @param id
+ * @returns
+ */
 export const deleteDragonById = async (id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
     API_CLIENT.delete<Dragon>(`/${id}`)
@@ -26,6 +40,11 @@ export const deleteDragonById = async (id: string): Promise<Dragon> => {
   });
 };
 
+/**
+ *
+ * @param dragon
+ * @returns
+ */
 export const createDragon = async (dragon: Dragon): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
     API_CLIENT.post<Dragon>('', dragon)
@@ -34,6 +53,12 @@ export const createDragon = async (dragon: Dragon): Promise<Dragon> => {
   });
 };
 
+/**
+ *
+ * @param dragon
+ * @param id
+ * @returns
+ */
 export const editDragon = async (dragon: Dragon, id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
     API_CLIENT.put<Dragon>(`/${id}`, dragon)

@@ -1,0 +1,16 @@
+$colors: (
+  batata: #000000,
+);
+
+$palettes: (
+  blue: (
+    darker: hsl(201, 61%, 34%),
+    dark: hsl(198, 57%, 39%),
+    base: hsl(196, 59%, 42%),
+    light: hsl(194, 56%, 51%),
+    lighter: hsl(192, 61%, 53%),
+  ),
+  red: (
+    base: hsl(0, 100%, 58%),
+  ),
+);

@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Poppins', Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+
+  text-rendering: optimizeLegibility;
+  text-decoration: inherit;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  padding-left: 0.5em;
+
+  font-weight: normal;
+}

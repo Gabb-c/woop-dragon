@@ -22,6 +22,7 @@
     "paths": {
       "@services/*": ["./src/services/*"],
       "@models/*": ["./src/models/*"],
+      "@contexts/*": ["./src/contexts/*"],
       "@assets/*": ["./src/assets/*"],
       "@utils/*": ["./src/utils/*"],
       "@components/*": ["./src/components/*"]

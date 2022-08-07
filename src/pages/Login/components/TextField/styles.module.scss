@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inputLabel {
+  font-size: 0.7rem;
+  color: #fefefe;
+}
+
+.input {
+  color: #fefefe;
+  background-color: #202225;
+
+  padding: 1em 1.4em 1em 1.4em;
+
+  outline: none;
+  border: 1px solid #202225;
+  border-radius: 0.4em;
+
+  &:active,
+  &:focus {
+    border: 1px solid #646cff;
+    transition: ease 0.3s;
+  }
+}
