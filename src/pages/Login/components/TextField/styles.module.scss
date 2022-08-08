@@ -9,6 +9,16 @@
   color: #fefefe;
 }
 
+.inputErrorLabel {
+  font-size: 0.7rem;
+  color: #d90429;
+}
+
+.inputErrorText {
+  font-size: 0.6rem;
+  color: #d90429;
+}
+
 .input {
   color: #fefefe;
   background-color: #202225;
@@ -24,4 +34,15 @@
     border: 1px solid #646cff;
     transition: ease 0.3s;
   }
+}
+
+.inputError {
+  color: #fefefe;
+  background-color: #202225;
+
+  padding: 1em 1.4em 1em 1.4em;
+
+  outline: none;
+  border: 1px solid #d90429;
+  border-radius: 0.4em;
 }

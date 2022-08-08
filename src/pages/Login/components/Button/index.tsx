@@ -1,13 +1,13 @@
 import styles from './styles.module.scss';
-
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
+  loading?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ label, ...props }): JSX.Element => {
+export const Button: React.FC<ButtonProps> = ({ label, loading, ...props }): JSX.Element => {
   return (
     <button {...props} className={styles.button}>
-      {label}
+      {!loading ? label : 'loading...'}
     </button>
   );
 };

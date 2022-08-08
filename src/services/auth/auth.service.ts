@@ -8,7 +8,6 @@ export const signIn = async (username: string, password: string): Promise<LoginR
   return new Promise<LoginResponse>((resolve, reject) => {
     setTimeout(() => {
       if (username === 'woop@sicredi.com.br' && password === 'SuperSecretPassword') {
-        console.log(username);
         const response: LoginResponse = {
           access_token: 'qwesadfqwesadfweqasdfwqef',
           user: {

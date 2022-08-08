@@ -11,30 +11,46 @@ export const LoginForm: React.FC = (): JSX.Element => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = () => {
+    setLoading(true);
     signIn(username, password)
       .then(() => navigate('/dragons'))
-      .catch((error) => console.log(error));
+      .catch((error_) => {
+        setError(true);
+        setLoading(false);
+        console.error(error_);
+      });
   };
 
   return (
     <div className={styles.card}>
-      {/* <img alt="Dragon Logo" src="/dragon.png" height={90} width={90} /> */}
       <h2>Welcome back!</h2>
       <div className={styles.fields}>
         <TextField
           label="Username"
+          error={error}
+          errorText="Invalid username"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e) => {
+            if (error) setError(false);
+            setUsername(e.target.value);
+          }}
         />
         <TextField
           label="Password"
+          error={error}
+          errorText="Invalid password"
           value={password}
           type="password"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => {
+            if (error) setError(false);
+            setPassword(e.target.value);
+          }}
         />
-        <Button label="Login" onClick={() => handleLogin()} />
+        <Button label="Login" loading={loading} disabled={loading} onClick={() => handleLogin()} />
       </div>
     </div>
   );
