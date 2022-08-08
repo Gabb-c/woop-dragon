@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  gap: 1.6em;
+  margin-bottom: 2em;
+
+  color: #fefefe;
+
+  transition: all 0.6s ease;
+
+  h1 {
+    line-height: 1.2em;
+  }
+}

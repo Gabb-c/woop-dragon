@@ -6,10 +6,10 @@ import { API_CLIENT } from '@utils/api';
  *
  * @returns
  */
-export const getAllDragons = async (): Promise<Dragon> => {
-  return new Promise<Dragon>((resolve, reject) => {
-    API_CLIENT.get<Dragon>('')
-      .then((response: AxiosResponse<Dragon>) => resolve(response.data))
+export const getAllDragons = async (): Promise<Dragon[]> => {
+  return new Promise<Dragon[]>((resolve, reject) => {
+    API_CLIENT.get<Dragon[]>('')
+      .then((response: AxiosResponse<Dragon[]>) => resolve(response.data))
       .catch((error: AxiosError<string>) => reject(error));
   });
 };
