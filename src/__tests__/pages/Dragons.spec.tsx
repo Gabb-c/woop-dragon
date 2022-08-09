@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import { DragonsPage } from '../../pages/Dragons';
 import { BrowserRouter } from 'react-router-dom';
 
-describe('Button', () => {
+describe('Dragons Dashboard', () => {
   it('test if it renders in the DOM', () => {
     render(<DragonsPage />, { wrapper: BrowserRouter });
 
