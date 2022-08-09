@@ -21,8 +21,6 @@ describe('UseLocalStorage', () => {
 
     const { result } = renderHook(() => useLocalStorage('test', ''));
 
-    console.log(result.current);
-
     expect(result.current).toBeTruthy();
   });
 });
