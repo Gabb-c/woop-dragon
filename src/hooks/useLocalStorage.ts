@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 export const getStorageValue = <T>(key: string, defaultValue: T): T => {
-  // getting stored value
   const saved = localStorage.getItem(key);
 
   if (saved) {
@@ -13,12 +12,9 @@ export const getStorageValue = <T>(key: string, defaultValue: T): T => {
 };
 
 export const useLocalStorage = <T>(key: string, defaultValue: T) => {
-  const [value, setValue] = useState(() => {
-    return getStorageValue<T>(key, defaultValue);
-  });
+  const [value, setValue] = useState(getStorageValue<T>(key, defaultValue));
 
   useEffect(() => {
-    // storing input name
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
 
