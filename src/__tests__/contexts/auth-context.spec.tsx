@@ -1,5 +1,6 @@
 import React from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 

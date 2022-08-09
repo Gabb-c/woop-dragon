@@ -10,9 +10,14 @@ export const DashboardHeader = () => {
 
   return (
     <div className={styles.container}>
-      <Button label="Logout" flavor="delete" onClick={() => signOut()} />
+      <Button label="Logout" name="logout" flavor="delete" onClick={() => signOut()} />
       <h1>Dragons Dashboard</h1>
-      <Button label="Add" flavor="save" onClick={() => navigate('/dragons/form')} />
+      <Button
+        label="Add"
+        name="add-dragon"
+        flavor="save"
+        onClick={() => navigate('/dragons/form')}
+      />
     </div>
   );
 };

@@ -154,4 +154,10 @@ psd
 thumb
 sketch
 
+### Cypress ###
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
+
 # End of https://www.toptal.com/developers/gitignore/api/react,node

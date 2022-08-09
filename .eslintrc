@@ -28,7 +28,8 @@
     "unicorn",
     "import",
     "storybook",
-    "prettier"
+    "prettier",
+    "eslint-plugin-cypress"
   ],
   "rules": {
     "prettier/prettier": "error",
@@ -50,8 +51,17 @@
       }
     ],
     "import/no-named-as-default-member": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "jest/valid-expect": "off"
   },
+  "overrides": [
+    {
+      "files": ["*.cy.ts"],
+      "rules": {
+        "jest/expect-expect": "off"
+      }
+    }
+  ],
   "settings": {
     "import/resolver": {
       "typescript": {}

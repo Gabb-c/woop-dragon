@@ -56,6 +56,7 @@ export const Form: React.FC = (): JSX.Element => {
           <>
             <TextField
               label="Name"
+              name="name"
               value={name}
               onChange={({ target: { value } }) => {
                 setDragon({ ...dragon, name: value });
@@ -63,6 +64,7 @@ export const Form: React.FC = (): JSX.Element => {
             />
             <TextField
               label="Type"
+              name="type"
               value={type}
               onChange={({ target: { value } }) => {
                 setDragon({ ...dragon, type: value });
@@ -70,6 +72,7 @@ export const Form: React.FC = (): JSX.Element => {
             />
             <TextArea
               label="Histories"
+              name="histories"
               value={histories}
               maxLength={200}
               rows={3}
@@ -79,12 +82,19 @@ export const Form: React.FC = (): JSX.Element => {
             />
             <Button
               label="Save"
+              name="save-dragon"
               flavor="save"
               loading={loadingButton}
               disabled={loading}
               onClick={handleSubmit}
             />
-            <Button label="Cancel" flavor="delete" onClick={() => navigate('/dragons')} />
+            <Button
+              label="Cancel"
+              name="cancel"
+              type="submit"
+              flavor="delete"
+              onClick={() => navigate('/dragons')}
+            />
           </>
         )}
       </div>

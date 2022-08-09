@@ -1,5 +1,6 @@
 import { getStorageValue, useLocalStorage } from '../../hooks/useLocalStorage';
 import { renderHook } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 describe('UseLocalStorage', () => {
   it('should return storage value', () => {

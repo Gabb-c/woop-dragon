@@ -31,6 +31,7 @@ export const LoginForm: React.FC = (): JSX.Element => {
       <div className={styles.fields}>
         <TextField
           label="Username"
+          name="username"
           error={error}
           errorText="Invalid username"
           value={username}
@@ -41,6 +42,7 @@ export const LoginForm: React.FC = (): JSX.Element => {
         />
         <TextField
           label="Password"
+          name="password"
           error={error}
           errorText="Invalid password"
           value={password}
@@ -50,7 +52,14 @@ export const LoginForm: React.FC = (): JSX.Element => {
             setPassword(e.target.value);
           }}
         />
-        <Button label="Login" loading={loading} disabled={loading} onClick={() => handleLogin()} />
+        <Button
+          label="Login"
+          name="login"
+          loading={loading}
+          type="submit"
+          disabled={loading}
+          onClick={() => handleLogin()}
+        />
       </div>
     </div>
   );

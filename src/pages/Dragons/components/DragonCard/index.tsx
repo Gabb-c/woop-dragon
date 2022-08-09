@@ -20,8 +20,13 @@ export const DragonCard: React.FC<DragonCardProps> = ({
       <h1 className={styles.dragonName}>{dragon.name}</h1>
       <h3 className={styles.dragonBirth}>{format(new Date(dragon.createdAt), 'MM/dd/yyyy')}</h3>
       <div className={styles.fields}>
-        <Button label="Edit" onClick={onEdit} />
-        <Button label="Delete" flavor="delete" onClick={() => onDelete(dragon.id)} />
+        <Button label="Edit" name="edit-dragon" onClick={onEdit} />
+        <Button
+          label="Delete"
+          name="delete-dragon"
+          flavor="delete"
+          onClick={() => onDelete(dragon.id)}
+        />
       </div>
     </div>
   );
