@@ -15,7 +15,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
   return (
     <div className={styles.container}>
       <span className={error ? styles.inputErrorLabel : styles.inputLabel}>{label}</span>
-      <textarea {...props} className={styles.input} />
+      <textarea {...props} data-testid="textarea-test" className={styles.input} />
       {error && <span className={styles.inputErrorText}>{errorText}</span>}
     </div>
   );

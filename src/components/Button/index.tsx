@@ -14,6 +14,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...props}
+      data-testid="button-test"
       className={!flavor || flavor === 'default' ? styles.button : styles[`button-${flavor}`]}
     >
       {!loading ? label : 'loading...'}
