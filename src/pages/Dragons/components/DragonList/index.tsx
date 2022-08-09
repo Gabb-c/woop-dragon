@@ -20,8 +20,6 @@ export const DragonList: React.FC = (): JSX.Element => {
     [filter]
   );
 
-  useEffect(() => console.log(filtered), [filtered]);
-
   const loadDragons = async () => {
     setLoading(true);
     await DragonService.getAllDragons()

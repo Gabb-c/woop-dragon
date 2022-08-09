@@ -8,7 +8,7 @@ describe('Dragons Form', () => {
   it('test if it renders in the DOM', () => {
     render(<DragonsForm />, { wrapper: BrowserRouter });
 
-    const resTest = screen.getByText(/add new dragon  /i);
+    const resTest = screen.getByText(/add new dragon/i);
 
     expect(resTest).toBeInTheDocument();
   });
