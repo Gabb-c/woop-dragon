@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('Login', () => {
-  beforeEach(() => cy.visit('http://127.0.0.1:5173/login'));
+  beforeEach(() => cy.visit('http://127.0.0.1:4173/login'));
 
   it('should input the credentials and go to the dashboard page', () => {
     cy.location().should((loc) => expect(loc.pathname).to.eq('/login'));
