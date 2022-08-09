@@ -15,7 +15,11 @@ export const TextField: React.FC<TextFieldProps> = ({
   return (
     <div className={styles.container}>
       <span className={error ? styles.inputErrorLabel : styles.inputLabel}>{label}</span>
-      <input {...props} className={error ? styles.inputError : styles.input} />
+      <input
+        {...props}
+        data-testid="input-test"
+        className={error ? styles.inputError : styles.input}
+      />
       {error && <span className={styles.inputErrorText}>{errorText}</span>}
     </div>
   );
