@@ -35,6 +35,7 @@ const config = {
   },
   collectCoverageFrom: [
     'src/**/*.[jt]s?(x)',
+    '!src/main.tsx',
     '!src/**/*.(stories|story).[jt]s?(x)',
     '!**/*.d.ts',
     '!**/node_modules/**',
