@@ -1,4 +1,4 @@
-name: Unit Test
+name: E2E Test
 
 on:
   pull_request:
@@ -26,5 +26,5 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
 
-      - name: Test
-        run: yarn test:ci
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
