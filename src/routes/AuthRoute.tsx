@@ -2,9 +2,9 @@ import { ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
 
 const AuthRoute: React.FC<{ children?: ReactNode }> = ({ children }): JSX.Element => {
-  const token = localStorage.getItem('@Auth:token');
+  const user = localStorage.getItem('@Auth:user');
 
-  return token ? (
+  return user ? (
     <>{children}</>
   ) : (
     <>
