@@ -3,8 +3,8 @@ import { Dragon } from '@models/dragon';
 import { API_CLIENT } from '@utils/api';
 
 /**
- *
- * @returns
+ * ## Get All Dragons
+ * @returns an array of dragons
  */
 export const getAllDragons = async (): Promise<Dragon[]> => {
   return new Promise<Dragon[]>((resolve, reject) => {
@@ -15,9 +15,9 @@ export const getAllDragons = async (): Promise<Dragon[]> => {
 };
 
 /**
- *
- * @param id
- * @returns
+ * ## Get Dragon By Id
+ * @param id - The dragon id
+ * @returns a dragon
  */
 export const getDragonById = async (id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
@@ -28,9 +28,9 @@ export const getDragonById = async (id: string): Promise<Dragon> => {
 };
 
 /**
- *
- * @param id
- * @returns
+ * ## Delete Dragon By Id
+ * @param id - The dragon id
+ * @returns the deleted dragon
  */
 export const deleteDragonById = async (id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
@@ -41,9 +41,9 @@ export const deleteDragonById = async (id: string): Promise<Dragon> => {
 };
 
 /**
- *
- * @param dragon
- * @returns
+ * ## Create Dragon
+ * @param dragon - The dragon
+ * @returns - The created dragon
  */
 export const createDragon = async (dragon: Dragon): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
@@ -54,10 +54,10 @@ export const createDragon = async (dragon: Dragon): Promise<Dragon> => {
 };
 
 /**
- *
- * @param dragon
- * @param id
- * @returns
+ * ## Edit Dragon
+ * @param dragon - The dragon
+ * @param id - The dragon id
+ * @returns - The edited dragon
  */
 export const editDragon = async (dragon: Dragon, id: string): Promise<Dragon> => {
   return new Promise<Dragon>((resolve, reject) => {
