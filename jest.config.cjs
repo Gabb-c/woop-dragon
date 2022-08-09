@@ -26,6 +26,12 @@ const config = {
   ],
   moduleNameMapper: {
     '.+\\.(svg|css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|ico)$': 'jest-transform-stub',
+    '^@contexts/(.*)': '<rootDir>/src/contexts/$1',
+    '^@services/(.*)': '<rootDir>/src/services/$1',
+    '^@pages/(.*)': '<rootDir>/src/pages/$1',
+    '^@components/(.*)': '<rootDir>/src/components/$1',
+    '^@assets/(.*)': '<rootDir>/src/assets/$1',
+    '^@utils/(.*)': '<rootDir>/src/utils/$1',
   },
   collectCoverageFrom: [
     'src/**/*.[jt]s?(x)',
