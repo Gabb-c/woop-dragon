@@ -10,7 +10,7 @@ interface IAuthContext {
   signOut: () => void;
 }
 
-const AuthContext = createContext<IAuthContext>({} as IAuthContext);
+export const AuthContext = createContext<IAuthContext>({} as IAuthContext);
 
 export const AuthProvider: React.FC<{ children?: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
