@@ -1,9 +1,9 @@
-import { useAuth } from '@contexts/AuthContext';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Button } from '../Button';
-import { TextField } from '../TextField';
 import styles from './styles.module.scss';
+import { Button } from '@components/Button';
+import { TextField } from '@components/TextField';
+import { useAuth } from '@contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export const LoginForm: React.FC = (): JSX.Element => {
   const { signIn } = useAuth();

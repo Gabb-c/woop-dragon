@@ -5,9 +5,9 @@
   justify-content: center;
 
   width: 25em;
-  height: 25em;
-  padding: 1em;
-  gap: 2em;
+  height: 30em;
+  padding: 3em 1em 3em 1em;
+  gap: 1em;
 
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
@@ -24,8 +24,4 @@
   flex-direction: column;
 
   gap: 1em;
-
-  button {
-    margin-top: 1em;
-  }
 }

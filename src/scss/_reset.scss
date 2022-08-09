@@ -44,4 +44,26 @@ h4,
 h5,
 h6 {
   margin: 0;
+  text-decoration: none;
+}
+
+textarea {
+  font-family: 'Poppins', Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 1em;
+    background: #fefefe;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
 }

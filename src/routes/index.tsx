@@ -1,12 +1,12 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { LoginPage } from '../pages/Login';
-import { DragonsPage } from '../pages/Dragons';
 import AuthRoute from './AuthRoute';
+import { DragonsForm } from '@pages/DragonsForm';
+import { DragonsPage } from '@pages/Dragons';
+import { LoginPage } from '@pages/Login';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 const AppRoutes: React.FC = (): JSX.Element => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to={'/dragons'} />} />
       <Route path="/login" element={<LoginPage />} />
       <Route
         path="/dragons"
@@ -17,13 +17,22 @@ const AppRoutes: React.FC = (): JSX.Element => {
         }
       />
       <Route
-        path="/dragons/:id"
+        path="/dragons/form/:id"
         element={
           <AuthRoute>
-            <DragonsPage />
+            <DragonsForm />
           </AuthRoute>
         }
       />
+      <Route
+        path="/dragons/form"
+        element={
+          <AuthRoute>
+            <DragonsForm />
+          </AuthRoute>
+        }
+      />
+      <Route path="*" element={<Navigate to={'/dragons'} />} />
     </Routes>
   );
 };

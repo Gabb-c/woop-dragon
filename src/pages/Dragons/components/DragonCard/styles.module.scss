@@ -7,7 +7,7 @@
   width: 20em;
   min-height: fit-content;
 
-  padding: 1em;
+  padding: 1.2em;
 
   gap: 1em;
 
@@ -21,6 +21,20 @@
   &:hover {
     transform: translateY(-8px);
     box-shadow: rgb(0, 0, 77) 0px 20px 30px -10px;
+  }
+
+  h1 {
+    width: 100%;
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  h5 {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
