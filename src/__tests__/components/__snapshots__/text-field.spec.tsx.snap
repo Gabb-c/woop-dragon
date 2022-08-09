@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button test if it matches snapshot 1`] = `
+exports[`TextField test if it matches snapshot 1`] = `
 <input
   data-testid="input-test"
 />
