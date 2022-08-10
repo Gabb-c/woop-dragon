@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dragon List should match snapshot 1`] = `
+<input
+  data-testid="input-test"
+  placeholder="Search..."
+  value=""
+/>
+`;
