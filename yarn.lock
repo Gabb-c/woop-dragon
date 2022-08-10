@@ -1125,7 +1125,21 @@
   resolved "https://registry.yarnpkg.com/@swc/wasm/-/wasm-1.2.130.tgz#88ac26433335d1f957162a9a92f1450b73c176a0"
   integrity sha512-rNcJsBxS70+pv8YUWwf5fRlWX6JoY/HJc25HD/F8m6Kv7XhJdqPPMhyX6TKkUBPAG7TWlZYoxa+rHAjPy4Cj3Q==
 
-"@testing-library/dom@^8.16.1", "@testing-library/dom@^8.5.0":
+"@testing-library/dom@^8.17.1":
+  version "8.17.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.17.1.tgz#2d7af4ff6dad8d837630fecd08835aee08320ad7"
+  integrity sha512-KnH2MnJUzmFNPW6RIKfd+zf2Wue8mEKX0M3cpX6aKl5ZXrJM1/c/Pc8c2xDNYQCnJO48Sm5ITbMXgqTr3h4jxQ==
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^4.2.0"
+    aria-query "^5.0.0"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.4.4"
+    pretty-format "^27.0.2"
+
+"@testing-library/dom@^8.5.0":
   version "8.16.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.16.1.tgz#96e528c9752d60061128f043e2b43566c0aba2d9"
   integrity sha512-XEV2mBxgv6DKjL3+U3WEUzBgT2CjYksoXGlLrrJXYP8OvRfGkBonvelkorazpFlp8tkEecO06r43vN4DIEyegQ==
@@ -1163,10 +1177,10 @@
     "@testing-library/dom" "^8.5.0"
     "@types/react-dom" "^18.0.0"
 
-"@testing-library/user-event@^14.4.2":
-  version "14.4.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.4.2.tgz#d3fb5d24e2d7d019a7d2e9978a8deb90b0aa230b"
-  integrity sha512-1gVTWtueNimveOjcm2ApFCnCTeky7WqY3EX31/GRKLWyCd+HfH+Gd2l1J8go9FpDNe+0Mx8X4zbQHTg0WWNJwg==
+"@testing-library/user-event@^14.4.3":
+  version "14.4.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.4.3.tgz#af975e367743fa91989cd666666aec31a8f50591"
+  integrity sha512-kCUc5MEwaEMakkO5x7aoD+DLi02ehmEM2QCGWvNqAS1dV/fAvORWEjnjsEIvml59M7Y5kCkWN6fCCyPOe8OL6Q==
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -2855,10 +2869,10 @@ eslint-plugin-import@^2.26.0:
     resolve "^1.22.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-jest@^26.8.1:
-  version "26.8.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.8.1.tgz#f870a9912f6fe65e16e181cbb368229cd5889c65"
-  integrity sha512-0+OSTIPjIIfl9heUxZyuU1gDEMW2sLvoVBGwiCIp+iEqUYt0Yqr5M5BjAyVShJaisICmCALdVv0nd1UDX/QaYw==
+eslint-plugin-jest@^26.8.2:
+  version "26.8.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.8.2.tgz#42a1248a5ade2bc589eb0f9c4e0608dd89b18cf3"
+  integrity sha512-67oh0FKaku9y48OpLzL3uK9ckrgLb83Sp5gxxTbtOGDw9lq6D8jw/Psj/9CipkbK406I2M7mvx1q+pv/MdbvxA==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
@@ -5443,10 +5457,10 @@ safe-regex@^2.1.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@^1.54.3:
-  version "1.54.3"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.3.tgz#37baa2652f7f1fdadb73240ee9a2b9b81fabb5c4"
-  integrity sha512-fLodey5Qd41Pxp/Tk7Al97sViYwF/TazRc5t6E65O7JOk4XF8pzwIW7CvCxYVOfJFFI/1x5+elDyBIixrp+zrw==
+sass@^1.54.4:
+  version "1.54.4"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.4.tgz#803ff2fef5525f1dd01670c3915b4b68b6cba72d"
+  integrity sha512-3tmF16yvnBwtlPrNBHw/H907j8MlOX8aTBnlNX1yrKx24RKcJGPyLhFUwkoKBKesR3unP93/2z14Ll8NicwQUA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
