@@ -9,7 +9,7 @@
     "email": "gdgabrieldacunha71@gmail.com"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 4173",
     "build": "tsc && vite build",
     "build:watch": "vite build --watch",
     "preview": "vite preview",

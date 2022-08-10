@@ -1,9 +1,8 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-
+import { render, screen, waitFor } from '@testing-library/react';
 import { TextArea } from '../../components/TextArea';
+import '@testing-library/jest-dom';
 
 describe('Button', () => {
   it('test if it renders in the DOM', () => {

@@ -1,9 +1,8 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-
+import { render, screen, waitFor } from '@testing-library/react';
 import { TextField } from '../../components/TextField';
+import '@testing-library/jest-dom';
 
 describe('TextField', () => {
   it('test if it renders in the DOM', () => {

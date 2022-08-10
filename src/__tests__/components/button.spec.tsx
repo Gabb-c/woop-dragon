@@ -1,9 +1,8 @@
 import React from 'react';
+import userEvent from '@testing-library/user-event';
+import { Button } from '../../components/Button';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import userEvent from '@testing-library/user-event';
-
-import { Button } from '../../components/Button';
 
 describe('Button', () => {
   it('test if it renders in the DOM', () => {
