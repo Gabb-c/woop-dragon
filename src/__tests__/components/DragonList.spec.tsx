@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { DragonList } from '../../pages/Dragons/components/DragonList';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';

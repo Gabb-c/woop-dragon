@@ -29,12 +29,18 @@ describe('Edit Dragon', () => {
 
     cy.location().should((loc) => expect(loc.pathname).to.contains('/dragons/form'));
 
-    cy.get('[name=name]').clear().type('Lorem Ipsum').should('have.value', 'Lorem Ipsum');
+    cy.get('[name=name]')
+      .clear({ interval: 1000 })
+      .type('Lorem Ipsum')
+      .should('have.value', 'Lorem Ipsum');
 
-    cy.get('[name=type]').clear().type('Sit Amet').should('have.value', 'Sit Amet');
+    cy.get('[name=type]')
+      .clear({ interval: 1000 })
+      .type('Sit Amet')
+      .should('have.value', 'Sit Amet');
 
     cy.get('[name=histories]')
-      .clear()
+      .clear({ interval: 1000 })
       .type(
         'Mauris finibus vitae risus eget consectetur. Aliquam consectetur purus mauris, vehicula feugiat est consectetur quis.'
       )
