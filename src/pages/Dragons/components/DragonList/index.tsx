@@ -24,7 +24,7 @@ export const DragonList: React.FC = (): JSX.Element => {
     setLoading(true);
     await DragonService.getAllDragons()
       .then((response) => {
-        const sorted = response.sort((a, b) =>
+        const sorted = [...response].sort((a, b) =>
           a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })
         );
         setList(sorted);
