@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading should match snapshot 1`] = `
+<svg
+  data-testid="loading"
+  height="200px"
+  preserveAspectRatio="xMidYMid"
+  viewBox="0 0 100 100"
+  width="200px"
+>
+  <rect
+    fill="#646cff"
+    height="40"
+    width="15"
+    x="17.5"
+    y="30"
+  >
+    <animate
+      attributeName="y"
+      begin="-0.2s"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="18;30;30"
+    />
+    <animate
+      attributeName="height"
+      begin="-0.2s"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="64;40;40"
+    />
+  </rect>
+  <rect
+    fill="#646cff"
+    height="40"
+    width="15"
+    x="42.5"
+    y="30"
+  >
+    <animate
+      attributeName="y"
+      begin="-0.1s"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="20.999999999999996;30;30"
+    />
+    <animate
+      attributeName="height"
+      begin="-0.1s"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="58.00000000000001;40;40"
+    />
+  </rect>
+  <rect
+    fill="#646cff"
+    height="40"
+    width="15"
+    x="67.5"
+    y="30"
+  >
+    <animate
+      attributeName="y"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="20.999999999999996;30;30"
+    />
+    <animate
+      attributeName="height"
+      calcMode="spline"
+      dur="1s"
+      keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
+      keyTimes="0;0.5;1"
+      repeatCount="indefinite"
+      values="58.00000000000001;40;40"
+    />
+  </rect>
+</svg>
+`;

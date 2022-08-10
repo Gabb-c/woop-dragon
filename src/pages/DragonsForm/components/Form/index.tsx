@@ -2,11 +2,11 @@ import DragonService from '@services/dragon';
 import styles from './styles.module.scss';
 import { Button } from '@components/Button';
 import { Dragon } from '@models/dragon';
-import { PropagateLoader } from 'react-spinners';
 import { TextArea } from '@components/TextArea';
 import { TextField } from '@components/TextField';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Loading } from '@components/Loading';
 
 export const Form: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
@@ -51,7 +51,7 @@ export const Form: React.FC = (): JSX.Element => {
       <h2>{id ? `Edit Dragon #${id}` : 'Add new Dragon'}</h2>
       <div className={styles.fields}>
         {loading ? (
-          <PropagateLoader color="white" />
+          <Loading />
         ) : (
           <>
             <TextField
