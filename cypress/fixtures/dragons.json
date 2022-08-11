@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ysera",
+    "type": "Dream",
+    "histories": "'Ysera is the Leader Queen and Aspect of the Green Dragonflight One of the five Dragon Aspects and Aspect of Dreams, and is the gatekeeper of the Emerald Dream.'"
+  },
+  {
+    "name": "Deathwing",
+    "type": "Fire",
+    "histories": "Deathwing the Destroyer, formerly known as Neltharion the Earth-Warder (pronounced nehl-THAW-ree-uhn), was one of the five Dragon Aspects and leader of the black dragonflight."
+  },
+  {
+    "name": "Malygos",
+    "type": "Magic",
+    "histories": "Malygos was the Aspect of the blue dragonflight and one of the most ancient creatures living on Azeroth and the eldest of the Aspects."
+  },
+  {
+    "name": "Kalecgos",
+    "type": "Magic",
+    "histories": "Kalecgos is the former Aspect of the blue dragonflight, after the death of Malygos."
+  },
+  {
+    "name": "Alextraza",
+    "type": "Fire",
+    "histories": "Alexstrasza the Life-Binder, Aspect of the red dragonflight, is the guardian of all life in the world of Azeroth."
+  }
+]
