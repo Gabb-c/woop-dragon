@@ -42,7 +42,7 @@ describe('Edit Dragon', () => {
 
       cy.wait(1000);
 
-      cy.location().should((loc) => expect(loc.pathname).to.eq('/dragons'));
+      return cy.location().should((loc) => expect(loc.pathname).to.eq('/dragons'));
     });
   });
 });

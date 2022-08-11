@@ -14,7 +14,7 @@ describe('Delete Dragon', () => {
         cy.reload();
         cy.wait(1000);
       }
-      cy.get('button').contains('Delete').click();
+      return cy.get('button').contains('Delete').click();
     });
   });
 });

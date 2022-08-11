@@ -15,7 +15,8 @@ Cypress.Commands.add('login', () => {
 
   cy.wait(1000);
 
-  cy.location()
+  return cy
+    .location()
     .should((loc) => expect(loc.pathname).to.eq('/dragons'))
     .should(() => {
       expect(localStorage.getItem('@Auth:user')).to.exist;
