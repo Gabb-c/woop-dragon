@@ -16,5 +16,9 @@ describe('Delete Dragon', () => {
       }
       return cy.get('button').contains('Delete').click();
     });
+
+    cy.wait('@getAllDragons').then(() =>
+      cy.location().should((loc) => expect(loc.pathname).to.eq('/dragons'))
+    );
   });
 });

@@ -16,7 +16,7 @@ describe('Edit Dragon', () => {
       }
       cy.get('button').contains('Edit').click();
 
-      cy.location().should((loc) => expect(loc.pathname).to.contains('/dragons/form'));
+      cy.wait(5000);
 
       cy.get('[name=name]')
         .clear({ interval: 1000 })
@@ -42,7 +42,9 @@ describe('Edit Dragon', () => {
 
       cy.wait(1000);
 
-      return cy.location().should((loc) => expect(loc.pathname).to.eq('/dragons'));
+      cy.wait('@getAllDragons').then(() =>
+        cy.location().should((loc) => expect(loc.pathname).to.eq('/dragons'))
+      );
     });
   });
 });
