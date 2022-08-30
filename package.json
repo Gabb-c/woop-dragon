@@ -30,7 +30,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-spinners": "^0.13.4",
-    "sass": "^1.54.5",
+    "sass": "^1.54.6",
     "vite-plugin-svgr": "^2.2.1"
   },
   "devDependencies": {
