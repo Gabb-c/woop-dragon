@@ -24,7 +24,7 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.0.0",
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
